@@ -5,4 +5,4 @@
 
 import KeyboardView from './src/Components/KeyboardView'
 
-export {KeyboardView};
+export default KeyboardView;
