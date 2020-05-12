@@ -1,9 +1,10 @@
 import React from 'react';
-import { Animated, Keyboard, UIManager} from 'react-native'
+import { Animated, Keyboard, UIManager, Platform} from 'react-native'
 import {currentlyFocusedField} from 'react-native/Libraries/Components/TextInput/TextInputState'
 
 
 const MAX_BOTTOM_MARGIN = 10
+const IS_ANDROID = Platform.OS === 'android';
 
 
 class KeyboardView extends React.PureComponent{
@@ -47,6 +48,10 @@ class KeyboardView extends React.PureComponent{
     }
 
     onKeyboardDidShow =  (event) => {
+
+        if(IS_ANDROID) {
+            return;
+        }
 
         const {endCoordinates} = event;
 

@@ -1,10 +1,10 @@
 {
-  "name": "KeyboardView",
-  "version": "0.0.2",
+  "name": "react-native-keyboard-hoc",
+  "version": "1.0.0",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/warish56/react-native-keyboardView"
+    "url": "https://github.com/warish56/react-native-keyboard-hoc"
   },
   "scripts": {
     "android": "react-native run-android",
